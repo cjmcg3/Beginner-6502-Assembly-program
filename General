@@ -1,0 +1,10 @@
+**Used to create a binary counter via a KIM1 board, LED's, and a ULN2803A transistor array for not gates to create a ground**
+
+LDA #$FF    
+STA $1701
+LDA #$00
+STA $1700
+INC $1700
+JMP $0200
+
+The above Mnemonic Instructions begin at AD $0200
